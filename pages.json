@@ -12,6 +12,27 @@
 		}, {
 			"path": "pages/info/info",
 			"style": {}
+		}, {
+			"path": "pages/book-shop/book-shop",
+			"style": {
+				"navigationBarTitleText": "书铺",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/best-sellers/best-sellers",
+			"style": {
+				"navigationBarTitleText": "畅销榜"
+			}
+		}, {
+			"path": "pages/new-books/new-books",
+			"style": {
+				"navigationBarTitleText": "新书榜"
+			}
+		}, {
+			"path": "pages/contact-us/contact-us",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+			}
 		}
 	],
 	"globalStyle": {
@@ -21,32 +42,31 @@
 		"backgroundColor": "#FFFFFF"
 	},
 	"tabBar": {
-		"selectedColor":"#FF9802",
-		"color":"#666666",
-		"list": [
-			{
-				"text":"首页",
-				"pagePath":"pages/index/index",
-				"iconPath":"static/icons/home.png",
-				"selectedIconPath":"static/icons/home_active.png"
+		"selectedColor": "#FF9802",
+		"color": "#666666",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icons/home.png",
+				"selectedIconPath": "static/icons/home_active.png"
 			},
 			{
-				"text":"书讯",
-				"pagePath":"pages/info/info",
-				"iconPath":"static/icons/info.png",
-				"selectedIconPath":"static/icons/info_active.png"
+				"text": "书讯",
+				"pagePath": "pages/info/info",
+				"iconPath": "static/icons/info.png",
+				"selectedIconPath": "static/icons/info_active.png"
 			},
 			{
-				"text":"购物车",
-				"pagePath":"pages/cart/cart",
-				"iconPath":"static/icons/cart.png",
-				"selectedIconPath":"static/icons/cart_active.png"
+				"text": "购物车",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/icons/cart.png",
+				"selectedIconPath": "static/icons/cart_active.png"
 			},
 			{
-				"text":"我的",
-				"pagePath":"pages/mine/mine",
-				"iconPath":"static/icons/mine.png",
-				"selectedIconPath":"static/icons/mine_active.png"
+				"text": "我的",
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/icons/mine.png",
+				"selectedIconPath": "static/icons/mine_active.png"
 			}
 		]
 	}

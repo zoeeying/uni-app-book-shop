@@ -14,4 +14,7 @@
 
 <style>
 	@import url("./static/fonts/iconfont.css");
+	view {
+		box-sizing: border-box;
+	}
 </style>
