@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Zoe",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "ejs": "^3.0.1",
+    "koa": "^2.11.0",
+    "koa-art-template": "^1.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jsonp": "^2.0.2",
+    "koa-router": "^8.0.8",
+    "koa-session": "^5.13.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.1",
+    "koa2-cors": "^2.0.6",
+    "mongodb": "^3.5.4"
+  }
+}
