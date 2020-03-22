@@ -1,9 +1,9 @@
 <template>
 	<view class="contact_us">
-		<image src="https://wx4.sinaimg.cn/mw690/600a9336gy1gd1pq8n1x6j20xc0ctq5w.jpg"></image>
+		<image src="https://wx2.sinaimg.cn/mw690/600a9336gy1gd0w3h9zj8j20u00bon0b.jpg"></image>
 		<view class="info">
-			<view @click="callPhone"><b>联系电话：</b>17502514869（点击拨打）</view>
-			<view><b>联系地址：</b>江苏省南京市六合区程桥镇古墩村周营组14号</view>
+			<view @click="callPhone"><text>联系电话：</text>17502514869（点击拨打）</view>
+			<view><text>联系地址：</text>江苏省南京市六合区程桥镇古墩村周营组14号</view>
 		</view>
 		<view class="map">
 			<map :longitude="longitude" :latitude="latitude" :markers="markers" :scale="scale"></map>
@@ -41,7 +41,7 @@
 	.contact_us {
 		image {
 			width: 750rpx;
-			height: 288rpx;
+			height: 292rpx;
 		}
 
 		.info {
@@ -54,6 +54,10 @@
 
 			view:nth-child(2) {
 				padding-top: 16rpx;
+			}
+			text {
+				font-weight: bold;
+				font-size: 36rpx;
 			}
 		}
 

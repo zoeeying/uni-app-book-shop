@@ -41,7 +41,7 @@
 
 						text: '新书榜',
 						class: 'iconfont icon-ziyuan',
-						path: '/pages/new-books/new-books'
+						path: '/pages/best-sellers/best-sellers'
 					},
 					{
 						text: '联系我们',
@@ -88,6 +88,7 @@
 		swiper {
 			width: 750rpx;
 			height: 292rpx;
+
 			image {
 				width: 100%;
 				height: 100%;

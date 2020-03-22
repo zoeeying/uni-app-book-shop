@@ -24,11 +24,6 @@
 				"navigationBarTitleText": "畅销榜"
 			}
 		}, {
-			"path": "pages/new-books/new-books",
-			"style": {
-				"navigationBarTitleText": "新书榜"
-			}
-		}, {
 			"path": "pages/contact-us/contact-us",
 			"style": {
 				"navigationBarTitleText": "联系我们"
@@ -69,5 +64,12 @@
 				"selectedIconPath": "static/icons/mine_active.png"
 			}
 		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "畅销榜",
+			"path": "pages/best-sellers/best-sellers"
+		}]
 	}
 }
