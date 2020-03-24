@@ -15,6 +15,13 @@ router.get('/books', async ctx => {
 	const data = books
 	ctx.body = data
 })
+router.get('/bookDetail', async ctx => {
+	const {
+		id
+	} = ctx.request.query
+	const data = books.filter(item => `${item.id}` === `${id}`)[0]
+	ctx.body = data
+})
 
 router.get('/cates', async ctx => {
 	const data = cates
@@ -32,6 +39,14 @@ router.get('/bestsellers', async ctx => {
 
 router.get('/bookInfo', async ctx => {
 	const data = bookInfo
+	ctx.body = data
+})
+
+router.get('/bookInfoDetail', async ctx => {
+	const {
+		id
+	} = ctx.request.query
+	const data = bookInfo.filter(item => `${item.id}` === `${id}`)[0]
 	ctx.body = data
 })
 

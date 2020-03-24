@@ -1,7 +1,7 @@
 <template>
 	<view class="info_item">
 		<view class="image">
-			<image :src="item.imgUrl"></image>
+			<image :src="item.imgUrl" mode="aspectFit"></image>
 		</view>
 		<view class="text">
 			<view>{{item.title}}</view>
@@ -13,7 +13,7 @@
 
 <script>
 	export default {
-		props: ['item']
+		props: ['item'],
 	}
 </script>
 
@@ -49,7 +49,7 @@
 				margin-top: 3px;
 			}
 			view:nth-child(3){
-				font-size: 30rpx;
+				font-size: 28rpx;
 				color: #333;
 				margin-top: 6px;
 			}

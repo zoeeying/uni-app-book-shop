@@ -1,6 +1,6 @@
 <template>
 	<view class="books">
-		<view class="one_book" v-for="(item,index) in books" :key="index">
+		<view class="one_book" v-for="(item,index) in books" :key="index" @click="goDetail(item)">
 			<image :src="item.image"></image>
 			<view class="name">{{item.title}}</view>
 			<view class="publish">{{item.author[0]}}/{{item.publisher}}/{{item.pubdate}}</view>
@@ -11,7 +11,14 @@
 
 <script>
 	export default {
-		props: ['books']
+		props: ['books'],
+		methods: {
+			goDetail(item){
+				uni.navigateTo({
+					url: '/pages/book-detail/book-detail?id=' + item.id
+				})
+			}
+		}
 	}
 </script>
 

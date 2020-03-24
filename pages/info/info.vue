@@ -1,6 +1,8 @@
 <template>
 	<view>
-		<info-item :key="item.id" v-for="item in bookInfo" :item="item"></info-item>
+		<view :key="item.id" v-for="item in bookInfo" @click="goDetail(item)">
+			<info-item :item="item"></info-item>
+		</view>
 	</view>
 </template>
 
@@ -24,11 +26,12 @@
 					url: '/api/bookInfo'
 				})
 				this.bookInfo = res
+			},
+			goDetail(item) {
+				uni.navigateTo({
+					url: '/pages/info-detail/info-detail?id=' + item.id
+				})
 			}
 		}
 	}
 </script>
-
-<style>
-
-</style>
